@@ -1,0 +1,26 @@
+名字: Android CI
+
+在:
+推:
+分支: [ “主人” ]
+拉取请求:
+分支: [ “主人” ]
+
+工作:
+建设:
+
+连续运行: ubuntu-latest
+
+步伐:
+    - 使用: actions/checkout@v3
+    - 名字: set up JDK 11
+使用: actions/setup-java@v3
+随着:
+Java语言（一种计算机语言，尤用于创建网站）版本: '11'
+分布: 特穆林
+隐藏物: gradle
+
+    - 名字: Grant execute permission for gradlew
+奔跑: chmod +x gradlew
+    - 名字: Build with Gradle
+奔跑: 运行:。/gradlew版本
